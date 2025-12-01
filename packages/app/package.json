@@ -8,6 +8,6 @@
     "test": "vitest"
   },
   "dependencies": {
-    "lib": "workspace:*"
+    "@org/lib": "workspace:*"
   }
 }
