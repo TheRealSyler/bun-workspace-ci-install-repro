@@ -6,7 +6,6 @@ jobs:
   unit-tests:
     name: Unit
     runs-on: ubuntu-latest
-    env:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
