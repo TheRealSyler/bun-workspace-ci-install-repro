@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "test": "bun run --elide-lines 0 --workspaces test",
-    "test:ci": "bun run --workspaces test:"
+    "test:ci": "bun run --workspaces test"
   },
   "devDependencies": {
     "@types/bun": "latest",
