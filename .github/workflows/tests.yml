@@ -1,0 +1,21 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  unit-tests:
+    name: Unit
+    runs-on: ubuntu-latest
+    env:
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install Packages
+        run: bun install --frozen-lockfile
+        shell: bash
+
+      - name: Run Tests
+        run: bun run test:ci

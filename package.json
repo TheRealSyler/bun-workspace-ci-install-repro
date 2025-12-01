@@ -1,0 +1,16 @@
+{
+  "name": "bun-workspace-ci-install-repro",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test:ci": "bun test --filter app"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0",
+    "vitest": "latest"
+  }
+}
